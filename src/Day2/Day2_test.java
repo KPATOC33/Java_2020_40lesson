@@ -1,6 +1,29 @@
 package Day2;
 
+import java.util.Scanner; //Подключил класс
+
 public class Day2_test {
+    public static void main(String[] args) {
+        Scanner scanner= new Scanner (System.in);
+//Дополнил задание вопросом
+        System.out.println("Введите количество этажей которые Вас интересуют ");
+
+        int floorCount = scanner.nextInt();
+        // Добавил условия
+        if (floorCount >= 1 && floorCount <= 4) {
+            System.out.println("Многоэтажный дом ");
+        } else if (floorCount >= 5 && floorCount <= 8) {
+            System.out.println("Средниэтажный дом ");
+        } else if (floorCount >= 9) {
+            System.out.println("Многоэтажный дом ");
+        } else {
+            System.out.println("Не корректный ввод ");
+        }
+
+
+
+
+    }
 }
 
 
@@ -104,3 +127,7 @@ public class Day2_test {
 //        будет использовано самое первое выражение. С помощью него, используя значение ​ x
 //        будет вычислено значение ​ y​ .
 //        y = (100^2 - 10) / (100 + 7) = 93.3644859813
+
+
+
+
