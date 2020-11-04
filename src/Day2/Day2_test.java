@@ -1,34 +1,106 @@
+//Четвертая задача
 package Day2;
 
 import java.util.Scanner; //Подключил класс
 
 public class Day2_test {
     public static void main(String[] args) {
-        Scanner scanner= new Scanner (System.in);
-//Дополнил задание вопросом
-        System.out.println("Введите количество этажей которые Вас интересуют ");
+        Scanner scanner= new Scanner(System.in);
 
-        int floorCount = scanner.nextInt();
-        // Добавил условия
-        if (floorCount >= 1 && floorCount <= 4) {
-            System.out.println("Многоэтажный дом ");
-        } else if (floorCount >= 5 && floorCount <= 8) {
-            System.out.println("Средниэтажный дом ");
-        } else if (floorCount >= 9) {
-            System.out.println("Многоэтажный дом ");
-        } else {
-            System.out.println("Не корректный ввод ");
-        }
+        System.out.println("Введите число ");
 
+       double x =scanner.nextDouble();
+       double y = 0;
 
-
-
+       if (x >= 5) {
+           //этим методом возводим x в квадрат
+           y = (Math.pow(x, 2) - 10 ) / (x + 7);
+       }
+       else if (x > -3 && x < 5) {
+           y = (x + 3) * (Math.pow(x, 2) -2) ;
+       } else {
+           y = 420;
+       }
+        System.out.println(y);
     }
 }
 
 
 
+//    Третья задача
+//package Day2;
+//
+//        import java.util.Scanner; //Подключил класс
+//
+//public class Day2_test {
+//    public static void main(String[] args) {
+//        Scanner scanner= new Scanner (System.in);
+//
+//        System.out.println("Введите число ");
+//
+//        int a = scanner.nextInt();
+//        int b = scanner.nextInt();
+//
+//        int t = a + 1;
+//        while (t < b) {
+//            if (t % 5 == 0 && t % 10 !=0)
+//                System.out.println(t);
+//            t++;
+//        }
+//    }
+//}
 
+//Вторая Задача
+//package Day2;
+//
+//        import java.util.Scanner; //Подключил класс
+//
+//public class Day2_test {
+//    public static void main(String[] args) {
+//        Scanner scanner= new Scanner (System.in);
+//
+//        System.out.println("Введите число ");
+//
+//        int a = scanner.nextInt();
+//        int b = scanner.nextInt();
+//
+//        for (int i= a + 1;i < b ;i++ ) {
+//            if ( i % 5 == 0 && i % 10 !=0 ) {
+//                System.out.print(i + " ");
+//            }
+//        }
+//
+//    }
+//}
+
+// Первая Задача
+//package Day2;
+//
+//        import java.util.Scanner; //Подключил класс
+//
+//public class Day2_test {
+//    public static void main(String[] args) {
+//        Scanner scanner= new Scanner (System.in);
+////Дополнил задание вопросом
+//        System.out.println("Введите количество этажей которые Вас интересуют ");
+//
+//        int floorCount = scanner.nextInt();
+//        // Добавил условия
+//        if (floorCount >= 1 && floorCount <= 4) {
+//            System.out.println("Многоэтажный дом ");
+//        } else if (floorCount >= 5 && floorCount <= 8) {
+//            System.out.println("Средниэтажный дом ");
+//        } else if (floorCount >= 9) {
+//            System.out.println("Многоэтажный дом ");
+//        } else {
+//            System.out.println("Не корректный ввод ");
+//        }
+//
+//
+//
+//
+//    }
+//}
 //        Урок 6: Условный оператор if.
 //                https://www.youtube.com/watch?v=ryR033ld_N0&list=PLAma_mKffTOSUkXp26rgdnC0PicnmnDak&index=6&ab_channel=alishev
 //        Урок 7: Ввод данных. Класс Scanner.
